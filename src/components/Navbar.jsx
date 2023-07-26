@@ -4,9 +4,9 @@ import { BsGlobe } from "react-icons/bs";
 const Navbar = () => {
   return (
     <>
-      <nav className="flex items-center gap-4">
+      <nav className="flex w-full mx-auto px-4 items-center gap-4">
         <div className="flex items-center cursor-pointer">
-          <img src={logo} className="h-[70px]" alt="" />
+          <img src={logo} className="h-[80px]" alt="" />
           <div>Category</div>
         </div>
         {/* search */}

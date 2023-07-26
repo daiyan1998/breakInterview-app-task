@@ -8,6 +8,7 @@ export default {
   theme: {
     colors: {
       primary_hover: "#860FD8",
+      primary_text: "#cec0fc",
     },
     extend: {},
   },
