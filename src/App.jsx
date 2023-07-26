@@ -3,6 +3,7 @@ import Banner from "./components/Banner";
 import Companies from "./components/Companies";
 import CourseContent from "./components/CourseContent";
 import FeaturedReview from "./components/FeaturedReview";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import YouLearn from "./components/youLearn";
 
@@ -24,6 +25,7 @@ function App() {
           <div className="bg-primary_hover h-32 mt-5 w-full basis-1/3"></div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

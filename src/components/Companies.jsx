@@ -1,19 +1,4 @@
-import compLogo from "/l1.png";
-
-const logos = [
-  {
-    logo: "",
-  },
-  {
-    logo: "",
-  },
-  {
-    logo: "",
-  },
-  {
-    logo: "",
-  },
-];
+import CompanyLogos from "./CompanyLogos";
 
 const Companies = () => {
   return (
@@ -28,11 +13,7 @@ const Companies = () => {
           Learn more
         </a>{" "}
       </p>
-      <div className="flex justify-between grayscale mt-5">
-        {logos.map((logo, i) => (
-          <img key={i} className="h-[60px]" src={compLogo} alt="" />
-        ))}
-      </div>
+      <CompanyLogos />
     </div>
   );
 };
