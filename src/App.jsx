@@ -1,6 +1,8 @@
 import "./App.css";
 import Banner from "./components/Banner";
 import Companies from "./components/Companies";
+import CourseContent from "./components/CourseContent";
+import FeaturedReview from "./components/FeaturedReview";
 import Navbar from "./components/Navbar";
 import YouLearn from "./components/youLearn";
 
@@ -15,6 +17,8 @@ function App() {
             <Banner></Banner>
             <YouLearn />
             <Companies />
+            <CourseContent />
+            <FeaturedReview />
           </div>
           {/* Side */}
           <div className="bg-primary_hover h-32 mt-5 w-full basis-1/3"></div>
