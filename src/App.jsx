@@ -5,6 +5,7 @@ import CourseContent from "./components/CourseContent";
 import FeaturedReview from "./components/FeaturedReview";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import StudentsBought from "./components/StudentsBought";
 import YouLearn from "./components/youLearn";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Companies />
             <CourseContent />
             <FeaturedReview />
+            <StudentsBought />
           </div>
           {/* Side */}
           <div className="bg-primary_hover h-32 mt-5 w-full basis-1/3"></div>
