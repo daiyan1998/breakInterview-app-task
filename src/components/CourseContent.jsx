@@ -1,4 +1,3 @@
-import React from "react";
 import { Accordion, AccordionItem } from "@szhsin/react-accordion";
 
 import { BsDot } from "react-icons/bs";

@@ -3,7 +3,7 @@ import { BsGlobe } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="bg-black text-white px-10">
+    <div className="bg-black text-white px-10 mt-10">
       <div className="border-b-2 border-gray-600">
         <div className="flex justify-between items-center font-semibold text-xl py-5">
           <p>

@@ -4,7 +4,7 @@ import { BsFillExclamationOctagonFill, BsGlobe } from "react-icons/bs";
 import { PiSubtitlesFill } from "react-icons/pi";
 const Banner = () => {
   return (
-    <section className=" py-7 container mx-auto bg-[#1C1D1F]">
+    <section className="max-w-6xl py-7 container mx-auto ">
       <div>
         <ol className="inline-flex text-primary_text items-center space-x-1 md:space-x-3">
           <li className="inline-flex items-center">

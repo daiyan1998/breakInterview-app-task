@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { AiFillStar, AiOutlineHeart } from "react-icons/ai";
+import { AiOutlineHeart } from "react-icons/ai";
 import { BsFillPeopleFill } from "react-icons/bs";
+import Rating from "./Rating";
 
 const StudentsBought = () => {
   const [boughts, setBoughts] = useState();
@@ -41,7 +42,7 @@ const StudentsBought = () => {
                 <div>
                   <p className="font-bold leading-tight">{title}</p>
                   <p className="text-green-600 text-sm mt-2 font-bold pl-2">
-                    29.5 total hours{" "}
+                    {hours}{" "}
                     <span className="text-gray-600 font-light">
                       {lastUpdated}
                     </span>
@@ -49,10 +50,7 @@ const StudentsBought = () => {
                 </div>
               </div>
               <div className="flex basis-1/2 justify-between">
-                <div className="flex text-sm font-bold items-center gap-1 text-yellow-400">
-                  <span>{rating}</span>
-                  <AiFillStar />
-                </div>
+                <Rating rating={rating} />
                 <p className="flex items-center gap-1">
                   <BsFillPeopleFill /> <span>{numRatings}</span>
                 </p>
