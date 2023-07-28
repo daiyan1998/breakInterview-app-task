@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillStar } from "react-icons/ai";
+import { AiFillStar, AiOutlineDislike, AiOutlineLike } from "react-icons/ai";
 import { BsDot } from "react-icons/bs";
 import Rating5 from "./Rating5";
 import { SlOptionsVertical } from "react-icons/sl";
@@ -50,33 +50,45 @@ const CourseRating = () => {
       <div className="grid grid-cols-2 gap-8 mt-8">
         {reviews.map(({ name }) => (
           <div key={name} className="border-t border-gray-500 ">
-            <div className="flex items-center gap-3 mt-6">
-              <img
-                className="rounded-full h-[50px] w-[50px] object-cover"
-                src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWFufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-              <div className="">
-                <p className="font-bold">Sourav</p>
-                <div className="flex gap-3 items-center">
-                  <Rating5 />
-                  <span className="text-sm">2 weeks age</span>
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3 mt-6">
+                <img
+                  className="rounded-full h-[50px] w-[50px] object-cover"
+                  src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWFufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                />
+                <div className="">
+                  <p className="font-bold">Sourav</p>
+                  <div className="flex gap-3 items-center">
+                    <Rating5 />
+                    <span className="text-sm">2 weeks age</span>
+                  </div>
                 </div>
               </div>
-              <SlOptionsVertical />
+              <SlOptionsVertical className="cursor-pointer" />
             </div>
             <div className="mt-6">
               <p>
                 It was a very well structured course and you explain very well.
                 Just when it came to ng-rx with and without
                 standalone-components with new and alternative syntax I needed
-                to pause the video quite often, to follow in the right
+                to pause the video quite often, to follow in the..
               </p>
-              <button className="font-bold underline">See more</button>
+              <button className="font-bold underline mt-1">See more</button>
+              <div className="mt-4 flex gap-4 items-center">
+                <p className="text-xs">Helpful?</p>
+                <div className="flex gap-3 items-center text-xl cursor-pointer">
+                  <AiOutlineLike />
+                  <AiOutlineDislike />
+                </div>
+              </div>
             </div>
           </div>
         ))}
       </div>
+      <button className="border border-gray-600 p-2 mt-6 font-semibold">
+        Show all reviews
+      </button>
     </div>
   );
 };

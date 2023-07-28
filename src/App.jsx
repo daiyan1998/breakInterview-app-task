@@ -7,6 +7,7 @@ import FeaturedReview from "./components/FeaturedReview";
 import Footer from "./components/Footer";
 import FrequentlyBought from "./components/FrequentlyBought";
 import Instructor from "./components/Instructor";
+import MoreCourses from "./components/MoreCourses";
 import Navbar from "./components/Navbar";
 import SideBar from "./components/SideBar";
 import StudentsBought from "./components/StudentsBought";
@@ -36,6 +37,7 @@ function App() {
           <FrequentlyBought />
           <Instructor />
           <CourseRating />
+          <MoreCourses />
         </div>
         {/* Side */}
         {/* <div className="absolute right-0 bottom-0 ">

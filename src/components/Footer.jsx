@@ -48,7 +48,7 @@ const Footer = () => {
       {/* end */}
       <div className="flex justify-between pt-28 pb-28">
         <img className="h-[70px]" src="/udemy.jpg" alt="" />
-        <p>&copy 2023 Udemy,Inc.</p>
+        <p>&copy; 2023 Udemy,Inc.</p>
       </div>
     </div>
   );
